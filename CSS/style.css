@@ -20,4 +20,6 @@ align-items: center;
 
 
 
-.tex
+.textos{
+    display: flex;
+}
