@@ -8,7 +8,7 @@ function mostrarImagem(index) {
 }
 
 let imagemAtual = 0
-mostrarImagem(1)
+mostrarImagem(0)
 
 // Próxima imagem
 function proximaImg() {
