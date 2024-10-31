@@ -1,0 +1,22 @@
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+    background-color: green;
+    height: 20vh;
+
+}
+
+.imagemHeader{
+    width: 14vw;
+    height: 14vh;
+}
+
+.header h1 {
+    font-size: 2vw;
+    color: white;
+}
+
+
+
