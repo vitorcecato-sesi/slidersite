@@ -36,4 +36,4 @@ function btnAnt() {
 } 
 
 // Troca automática de imagens
-let intervalo = setInterval(proximaImg(), 3000)
+let intervalo = setInterval(proximaImg, 3000)
