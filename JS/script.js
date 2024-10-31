@@ -10,6 +10,30 @@ function mostrarImagem(index) {
 let imagemAtual = 0
 
 // Próxima imagem
-function proximaImagem() {
-    imagemAtual = ()
+function proximaImg() {
+    imagemAtual = (imagemAtual + 1) % imagensSlider.length
+    mostrarImagem(imagemAtual)
 }
+
+// Imagem Anterior
+function anteriorImg() {
+    imagemAtual = (imagemAtual - 1 + imagensSlider.length) % imagensSlider.length
+    mostrarImagem(imagemAtual)
+}
+
+// Botão Próximo
+function btnProx() {
+    proximaImg()
+    clearInterval(intervalo)
+    intervalo = setInterval(proximaImg, 3000)
+}
+
+// Botão Anterior
+function btnAnt() {
+    anteriorImg()
+    clearInterval(intervalo)
+    intervalo = setInterval(proximaImg, 3000)
+} 
+
+// Troca automática de imagens
+let intervalo = setInterval(proximaImg(), 3000)
